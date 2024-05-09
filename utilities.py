@@ -10,13 +10,13 @@ def grid_search(params, scores, base_model, Xtr, ytr, Xte, yte, n_splits=3, rand
         scores = [scores]
 
     for score in scores:
-        print(f"Tuning hyperparameters for: AA{score}...")
+        print(f"Tuning hyperparameters for: {score}...")
         
         clf = GridSearchCV(estimator=base_model,
                         param_grid=params,
                         scoring=score,
                         return_train_score=False,
-                        cv=skf, verbose=2)
+                        cv=skf, verbose=1)
         
         clf.fit(Xtr, ytr)
         
