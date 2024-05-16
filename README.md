@@ -8,7 +8,3 @@ Work done for the 2023/2024 Project Work in ML & Data Mining, using data from th
 [Kaggle comment on the imbalanced-ness of this dataset](https://www.kaggle.com/competitions/playground-series-s3e17/discussion/419086)
 
 [Another comment on the same thing](https://www.kaggle.com/competitions/playground-series-s3e17/discussion/416923)
-
-## To try
-
-- [ ] Oversampling minority class

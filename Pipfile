@@ -5,7 +5,8 @@ name = "pypi"
 
 [packages]
 pandas = "*"
-scikit-learn = "*"
+#scikit-learn = "*"
+scikit-learn = "==1.2.2"
 ipykernel = "*"
 numpy = "*"
 matplotlib = "*"
