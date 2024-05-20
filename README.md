@@ -20,8 +20,8 @@ The very strongly imbalanced dataset required performing oversampling, done usin
 
 1. Upload the `cache` folder and `data.csv` to Google Drive
 	- If `cache` is omitted, it will be regenerated automatically
-2. Uncomment the first cell of the notebook to enable mounting a GDrive, remembering to put in the actual path to which you've uploaded the previous two folders
-	- The cell will also install `imblearn`, the only required package not preinstalled in Colab
+2. Uncomment the first three cells of the notebook to enable mounting a GDrive, remembering to put in the actual path to which you've uploaded the previous two folders
+	- This will also install `imblearn`, the only required package not preinstalled in Colab
 
 ### On your PC
 
