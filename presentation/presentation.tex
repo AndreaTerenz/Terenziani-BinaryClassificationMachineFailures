@@ -1,0 +1,60 @@
+\documentclass[10pt]{beamer}
+\usepackage{ragged2e}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage[cache=false]{minted}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usemintedstyle{solarized-light}
+\captionsetup{font=footnotesize,labelfont={bf,sf}}
+\captionsetup[sub]{font=scriptsize,labelfont={bf,sf}}
+\setlength{\abovecaptionskip}{3pt plus 1pt minus 2pt}
+\setlength{\belowcaptionskip}{4pt plus 1pt minus 2pt}
+\bibliographystyle{plainurl}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+
+\apptocmd{\frame}{}{\justifying}{}
+\usetheme{Montpellier}
+\usecolortheme{beaver}
+\usefonttheme{structurebold}
+\definecolor{links}{HTML}{2986CC}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{footline}[frame number]
+\beamertemplatenavigationsymbolsempty
+\setbeamercolor{bibliography item}{parent=palette primary}
+\setbeamercolor*{bibliography entry title}{parent=palette primary}
+
+\newcommand{\txt}[1]{\mintinline{text}{#1}}
+
+\title{Binary classification of machine failures}
+\subtitle{Project work in Machine Learning \& Data Mining}
+\author{ Andrea Terenziani \\ \footnotesize \href{mailto:andrea.terenziani@studio.unibo.it}{andrea.terenziani@studio.unibo.it}}
+\institute{University of Bologna}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{\contentsname}
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+\end{frame}
+
+\input{sections/Intro}
+
+\input{sections/Models}
+
+\input{sections/Results}
+
+\begin{frame}[allowframebreaks]{References}
+    \small
+    \bibliography{bibliography}
+\end{frame}
+
+\end{document}
