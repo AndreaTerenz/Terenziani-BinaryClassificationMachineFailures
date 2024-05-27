@@ -64,11 +64,11 @@ The fraction of devices belonging to each class is 98.43\% for class 0 and 1.57\
 
 \subsection{Challenges}
 \begin{frame}{\subsecname}
-The main issue with the data is its extreme \textit{imbalance} between majority and minority class (see slide \ref{attributes}). This is addressed by:
+The main issue with the data is its extreme \textit{imbalance} between majority and minority class (see slide \ref{attributes}). This is addressed (mostly) by:
 \begin{enumerate}
     \justifying
     \small
-    \item oversampling the minority class (since undersampling the majority, in this case, would mean removing a large number of rows)
+    \item resampling the minority class 
     \item choosing an appropriate metric for tuning
 \end{enumerate}
 
@@ -86,6 +86,6 @@ The preprocessing simply comprised:
     \item Normalizing all remaining features (except for Type, which is categorical)
 \end{itemize}
 
-The resampling specifically consisted in \textit{oversampling} the minority class to reach a minority-majority ratio of 1 to 10. This was done using the \mintinline{text}{imbalanced-learn} Python package \cite{imblearn}, which offers an implementation of the SMOTE oversampling method \cite{DBLP:journals/corr/abs-1106-1813}.
+The resampling specifically consisted in \textit{oversampling} the minority class to reach a minority-majority ratio of 1 to 10. This was done using the \mintinline{text}{imbalanced-learn} Python package \cite{imblearn}, which offers an implementation of the SMOTE oversampling method \cite{DBLP:journals/corr/abs-1106-1813}. Undersampling the majority was instead discarded because, in this case, it would mean removing a large number of rows to achieve the same ratio.
 
 \end{frame}
